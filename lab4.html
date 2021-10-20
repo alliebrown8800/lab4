@@ -1,0 +1,20 @@
+<!-- Put this file in /var/www/html/led-pwm.html 
+ and put led-pwm.py file in /usr/lib/cgi-bin/led.py -->
+
+
+<html>
+<form action="/cgi-bin/lab4.py" method="POST">
+
+<!-- Selecting which LED -->
+<input type="radio" name="option" value="white" checked> white LED <br>
+<input type="radio" name="option" value="blue"> blue LED <br>
+<input type="radio" name="option" value="green"> green LED <br>
+
+<!-- Selecting brightness -->
+<input type="range" name="slider" min ="0" max="100" value ="0"><br>
+
+<!-- Submit -->
+<input type="submit" value="Change LED brightness">
+
+</form>
+</html>
